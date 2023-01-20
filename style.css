@@ -2,12 +2,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 }
 /* intro section START*/
 .introduction{
+    overflow: scroll;
     background-color: #1f2937;
-    display: flex;
-    flex-direction: column;    
     margin: 0;
     padding: 0;
     padding-bottom: 100px;
@@ -23,6 +25,8 @@ body {
 .body1 {
     display: flex;
     justify-content: center;
+    flex: 1 1 auto;
+    
 }
 
 .left {
@@ -30,22 +34,34 @@ body {
     font-weight: bolder;
     color: #f9faf8;
     display: flex;
+    max-width: 450px;
     flex-direction: column;
-    align-items: baseline;
-    max-width: 450px;    
-    margin-right: 190px;
+    align-content: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 50px;
 }
 
 .right {
-    justify-content: right;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+
 }
+ img {
+    height: auto;
+    width: 50%;
+ }
 
 .signup1 {
     padding: 5px 18px;
     background-color: #3882F6;
     color: white;
     border-color: #3882F6;
-    border-radius: 5px;
+    border-radius: 0.5em;
+    max-width: 100px;
 }
 
 .smalltext,
@@ -67,10 +83,6 @@ li {
     margin: 10px;
 }
 
-img {
-    max-width: 500px;
-    height: auto;
-}
 /* intro section END*/
 
 /* information section START*/
@@ -84,14 +96,18 @@ img {
 
 .info {
     margin-bottom: 80px;
+    display: flex;
 }
 
 .rounds {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
-    gap: 40px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.set {
+    margin: 20px;
 }
 
 .subtext {
@@ -112,6 +128,7 @@ img {
 
 /* quote section START*/
 .container {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     background-color: #E5E7EB;
@@ -119,10 +136,13 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
 }
 
 .quote {
-    width: 825px;
+    overflow: hidden;
+    max-width: 825px;
     margin-top: 50px;
     font-size: 36px;
     font-weight: lighter;
@@ -131,48 +151,56 @@ img {
 }
 
 .author {
-    width: 700px;
-    margin: 0;
+    overflow: hidden;
+    margin-left: 250px;
     font-size: 22px;
-    align-self: flex-end;
+    align-self: center;
 }
-
 /* quote section END*/
 
 /* sign up section START*/
 .conclusion {
-    height: 150px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    padding: 2em;
     background-color: #3882F6;
     margin: 125px 250px;
     border-radius: 10px;
     display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
 .text {
+    max-width: 25em;
     color: white;
-    margin: 150px;
+    display: flex;
+    flex-direction: column;
+    
 }
 .bold {
     font-weight: 550;
-    font-size: 25px;
+    font-size: 1.75em;
 }
 .smallertext {
-    font-size: 19px;
+    font-size: 1.2em;
     color: #e5e7eb;
 }
 .signup {
-    width: 150px;
-    height: 40px;
-    margin: 150px;
-    border-radius: 10px;
+    max-height: 3em;
+    border-radius: 0.5em;
     border-color: white;
     background-color: transparent;
     color: white;
-    font-size: 20px;
+    font-size: 1.25em;
 }
-
 /* sign up section END*/
 
 /* footer section START*/
